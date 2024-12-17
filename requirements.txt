@@ -1,0 +1,6 @@
+pandas
+requests
+Pillow
+transformers>=4.45.1
+matplotlib
+openpyxl
