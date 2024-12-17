@@ -2,9 +2,9 @@
     Evaluating Image Hallucination in Text-to-Image Generation with Question-Answering
 </h2>
 <h5 align="center">
-    Youngsun Lim<sup>1 *</sup>, Hojun Choi<sup>1 *</sup>, Hyunjung Shim<sup>1</sup><br>
+    Youngsun Lim<sup> *</sup>, Hojun Choi<sup> *</sup>, Hyunjung Shim<br>
     (* indicates equal contributions)<br>
-    <sup>1</sup>Graduate School of Artificial Intelligence, KAIST, Republic of Korea<br>
+    Graduate School of Artificial Intelligence, KAIST, Republic of Korea<br>
     <code>{youngsun_ai, hchoi256, kateshim}@kaist.ac.kr</code><br>
     <!-- <a href="https://arxiv.org/pdf/2203.11876.pdf">arXiv</a> |
     <a href="https://www.mmlab-ntu.com/project/ovdetr/index.html">Project Page</a> |
@@ -19,7 +19,7 @@
 
 <div align="center">
     <!-- <img src="assets/part_clipseg_teaser.png" alt="drawing" height="200em"/> -->
-    <img src="assets/teaser.png" alt="drawing" width="65%"/>
+    <img src="assets/teaser.png" alt="drawing" width="100%"/>
     <!-- <img src="assets/part_clipseg_teaser.png" alt="drawing" /> -->
 </div>
 
@@ -40,18 +40,18 @@ Despite the huge success of text-to-image (TTI) generation models, existing stud
 
 <div align="center">
     <!-- <img src="assets/part_clipseg_overall_architecture.png" alt="drawing" height="200em"/> -->
-    <img src="assets/architecture.png" alt="drawing" width="75%"/>
-    <img src="assets/exp.png" alt="drawing" width="45%"/>
-    <img src="assets/human_eval.png" alt="drawing" width="39.5%"/>
+    <img src="assets/architecture.png" alt="drawing" width="100%"/>
+    <img src="assets/exp.png" alt="drawing" width="100%"/>
+    <img src="assets/human_eval.png" alt="drawing" width="65%"/>
 </div>
 
 <br/>
 
 ### Updates
 
-- [o] [2024.12.16] 👨‍💻 The official codes have been released!
-- [o] [2024.12.10] 🎉 Our paper has been accepted to [AAAI 2025](https://openreview.net/group?id=AAAI.org/2025/Conference#tab-accept)!
-- [o] [2024.09.19] 📄 Our paper is now available! You can find the paper [here](https://arxiv.org/abs/2409.12784).
+- [✅] [2024.12.16] 👨‍💻 The official codes have been released!
+- [✅] [2024.12.10] 🎉 Our paper has been accepted to [AAAI 2025](https://openreview.net/group?id=AAAI.org/2025/Conference#tab-accept)!
+- [✅] [2024.09.19] 📄 Our paper is now available! You can find the paper [here](https://arxiv.org/abs/2409.12784).
 
 
 
