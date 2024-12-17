@@ -1,3 +1,8 @@
+#############################################################
+# Code written by Hojun Choi                                #
+# Date: 2024-12-18                                          #
+#############################################################
+
 import requests
 import json
 from utils import ColoredText, load_image, load_text

@@ -1,3 +1,8 @@
+#############################################################
+# Code written by Hojun Choi                                #
+# Date: 2024-12-18                                          #
+#############################################################
+
 import pandas as pd
 import requests
 from utils import ColoredText, load_text

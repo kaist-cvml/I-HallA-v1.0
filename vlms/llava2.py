@@ -1,3 +1,8 @@
+#############################################################
+# Code written by Hojun Choi                                #
+# Date: 2024-12-18                                          #
+#############################################################
+
 from transformers import LlavaNextProcessor, LlavaNextForConditionalGeneration
 import torch
 from PIL import Image
