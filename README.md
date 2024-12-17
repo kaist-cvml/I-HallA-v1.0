@@ -78,7 +78,7 @@ pip install -r requirements.txt
 
 ---
 
-## Data Preparation
+## Data Preparation (We have included links to each of our benchmark datasets.)
 - Prepare the **image data** for the I-HallA v1.0 benchmark from [models/](https://drive.google.com/drive/folders/1Me--5W0iyAHarLztLznpgyACKXSyyHIC?usp=sharing). 
 - Obtain the **caption data** for the I-HallA v1.0 benchmark from [captions.xlsx](https://docs.google.com/spreadsheets/d/1QdIse3GloFp7HkwoFmK_L3zHZkODoE11N1jIt6O_NAc/edit?usp=sharing).
 - Obtain the **QA sets** for the history domain on the I-HallA v1.0 benchmark from [LV_reasoning_history.xlsx](https://docs.google.com/spreadsheets/d/146LXyXh8ivRz_psXU1mY3iMUgMZIh1hadOhnkiM_jUE/edit?usp=sharing)
