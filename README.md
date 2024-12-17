@@ -6,6 +6,7 @@
     (* indicates equal contributions)<br>
     Graduate School of Artificial Intelligence, KAIST, Republic of Korea<br>
     <code>{youngsun_ai, hchoi256, kateshim}@kaist.ac.kr</code><br>
+    This is the official implementation of I-HallA v1.0.<br>
     <!-- <a href="https://arxiv.org/pdf/2203.11876.pdf">arXiv</a> |
     <a href="https://www.mmlab-ntu.com/project/ovdetr/index.html">Project Page</a> |
     <a href="https://github.com/yuhangzang/OV-DETR">Code</a> -->
