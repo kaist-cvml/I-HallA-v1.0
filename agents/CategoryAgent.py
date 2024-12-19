@@ -22,28 +22,26 @@ Temporal: Ancient/Medieval/Modern
 """
 
 class CatAgent:
-    api_key = "[YOUR_API_KEY]"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
-    }
-    payload = {
-        "model": "gpt-4o",
-        "messages": [
-        {
-            "role": "user",
-            "content": [
-            {
-                "type": "text",
-                "text": ""
-            },
-            ]
-        }
-        ],
-    }
-
     def __init__(self, api_key, category=None):
-        self.api_key = api_key
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        self.payload = {
+            "model": "gpt-4o",
+            "messages": [
+            {
+                "role": "user",
+                "content": [
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                ]
+            }
+            ],
+        }
+
         self.category = category
         self.results = []
         self.file_caption_directory= os.path.join(os.path.dirname(__file__), '..', 'data', 'captions.xlsx')

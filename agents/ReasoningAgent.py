@@ -14,28 +14,26 @@ Your goal is to combine them all, ensuring they do not overlap with each other.
 """
 
 class ReasoningAgent:
-    api_key = "[YOUR_API_KEY]"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
-    }
-    payload = {
-        "model": "gpt-4o",
-        "messages": [
-        {
-            "role": "user",
-            "content": [
-            {
-                "type": "text",
-                "text": ""
-            },
-            ]
-        }
-        ],
-    }
-
     def __init__(self, api_key):
-        self.api_key = api_key
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        self.payload = {
+            "model": "gpt-4o",
+            "messages": [
+            {
+                "role": "user",
+                "content": [
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                ]
+            }
+            ],
+        }
+
 
     def query(self, reasonings):
         reasoning_string = "\n".join([f"[{i+1}] {reasoning}" for i, reasoning in enumerate(reasonings)])

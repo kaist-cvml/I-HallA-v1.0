@@ -106,28 +106,27 @@ def parse_questions(input_string):
     return coi
 
 class CoIAgent:
-    api_key = "[YOUR_API_KEY]"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
-    }
-    payload = {
-        "model": "gpt-4o",
-        "messages": [
-        {
-            "role": "user",
-            "content": [
-            {
-                "type": "text",
-                "text": ""
-            },
-            ]
-        }
-        ],
-    }
 
     def __init__(self, api_key, category=None):
-        self.api_key = api_key
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        self.payload = {
+            "model": "gpt-4o",
+            "messages": [
+            {
+                "role": "user",
+                "content": [
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                ]
+            }
+            ],
+        }
+
         self.category = category
         self.file_reasoning_directory= f'data/GPT4o_QA_history_mod_cois.xlsx'
     

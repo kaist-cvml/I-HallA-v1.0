@@ -99,28 +99,27 @@ def parse_questions(input_string):
     return cois, questions, choices, answers
 
 class QAAgent:
-    api_key = "[YOUR_API_KEY]"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
-    }
-    payload = {
-        "model": "gpt-4o",
-        "messages": [
-        {
-            "role": "user",
-            "content": [
-            {
-                "type": "text",
-                "text": ""
-            },
-            ]
-        }
-        ],
-    }
 
     def __init__(self, api_key, category=None):
-        self.api_key = api_key
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        self.payload = {
+            "model": "gpt-4o",
+            "messages": [
+            {
+                "role": "user",
+                "content": [
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                ]
+            }
+            ],
+        }
+
         self.category = category
         self.file_reasoning_directory= f'data/LV_reasoning_{category}.xlsx'
         self.file_caption_directory= f'data/captions.xlsx'

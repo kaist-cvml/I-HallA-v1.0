@@ -55,87 +55,85 @@ Image:
 """
 
 class ImageAgent:
-    api_key = "[YOUR_API_KEY]"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
-    }
-    payload = {
-        "model": "gpt-4o",
-        "messages": [
-        {
-            "role": "user",
-            "content": [
-            {
-                "type": "text",
-                "text": ""
-            },
-            # few-shot examples
-            # example 1
-            {
-                "type": "text",
-                "text": ""
-            },
-            {
-                "type": "image_url",
-                "image_url": {
-                "url": ""
-                }
-            },
-            # example 2
-            {
-                "type": "text",
-                "text": ""
-            },
-            {
-                "type": "image_url",
-                "image_url": {
-                "url": ""
-                }
-            },
-            # example 3
-            {
-                "type": "text",
-                "text": ""
-            },
-            {
-                "type": "image_url",
-                "image_url": {
-                "url": ""
-                }
-            },
-            # example 4
-            {
-                "type": "text",
-                "text": ""
-            },
-            {
-                "type": "image_url",
-                "image_url": {
-                "url": ""
-                }
-            },
-            # goal prompt
-            {
-                "type": "text",
-                "text": ""
-            },
-            {
-                "type": "image_url",
-                "image_url": {
-                "url": ""
-                }
-            }
-            ]
-        }
-        ],
-    }
-
     def __init__(self, api_key, category=None):
-        self.api_key = api_key
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        self.payload = {
+            "model": "gpt-4o",
+            "messages": [
+            {
+                "role": "user",
+                "content": [
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                # few-shot examples
+                # example 1
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {
+                    "url": ""
+                    }
+                },
+                # example 2
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {
+                    "url": ""
+                    }
+                },
+                # example 3
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {
+                    "url": ""
+                    }
+                },
+                # example 4
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {
+                    "url": ""
+                    }
+                },
+                # goal prompt
+                {
+                    "type": "text",
+                    "text": ""
+                },
+                {
+                    "type": "image_url",
+                    "image_url": {
+                    "url": ""
+                    }
+                }
+                ]
+            }
+            ],
+        }
+        self.headers["Authorization"].format(api_key=api_key)
         self.category = category
         self.results = []
-        self.file_image_directory = f"data/models/dalle-3/{category}/"
+        self.file_image_directory = f"data/models/dalle-3/{category}"
         self.file_caption_directory= 'data/captions.xlsx'
         self.fewshot_caption_directory = f"data/fewshot/"
         self.fewshot_images = []

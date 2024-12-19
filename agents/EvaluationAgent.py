@@ -49,40 +49,39 @@ Answer:
 """
 
 class EvaluationAgent:
-    api_key = "[YOUR_API_KEY]"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {api_key}"
-    }
-    payload = {
-        "model": "gpt-4o-mini",
-        "messages": [
-        {
-            "role": "user",
-            "content": [
-            {
-                "type": "image_url",
-                "image_url": {
-                "url": ""
-                }
-            },
-            {
-                "type": "text",
-                "text": ""
-            }
-            ]
-        }
-        ],
-    }
 
     def __init__(self, api_key, category=None):
-        self.api_key = api_key
+        self.headers = {
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {api_key}"
+        }
+        self.payload = {
+            "model": "gpt-4o",
+            "messages": [
+            {
+                "role": "user",
+                "content": [
+                {
+                    "type": "image_url",
+                    "image_url": {
+                    "url": ""
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": ""
+                }
+                ]
+            }
+            ],
+        }
+
         self.category = category
         self.results = []
         # self.coi_table = ["existence", "size", "color", "shape", "posture", "relation", "scene", "counting"]
         self.model_version = "sd-v1-4" # "dalle-3", "sd-v1-4", "sd-v1-5", "sd-v2-0", "sd-xl"
         self.image_type = "weird" # "normal/weird"
-        self.file_image_directory = f"data/models/{self.model_version}/{self.category}/{self.image_type}/"
+        self.file_image_directory = f"data/models/{self.model_version}/{self.category}/{self.image_type}"
         self.file_qas_directory= f"data/GPT4o_QA_{self.category}_mod_cois.xlsx"
         
     def encode_image(self, image_path):
