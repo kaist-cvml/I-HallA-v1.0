@@ -252,8 +252,8 @@ If you find our work helpful, please cite us:
                   Hojun Choi and
                   Hyunjung Shim},
   title        = {Evaluating Image Hallucination in Text-to-Image Generation with Question-Answering},
-  journal      = {CoRR},
-  year         = {2024},
+  conference   = {AAAI},
+  year         = {2025},
 }
 ```
 
