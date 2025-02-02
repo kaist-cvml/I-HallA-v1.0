@@ -12,11 +12,11 @@ gpt_prompt = """
 You are an agent who answers questions based on the given image.
 Here, the given image could be wrong.
 
-So, your job is to either choose the best answer choice or output "None" for ambiguous questions.
+So, your job is to either choose the best answer choice or output "None of the above" for ambiguous questions.
 
 Your answer must choose one of the given choices to your best knowledge.
-It must be a single character that indicates its answer (i.e., "A", "B", "C", "D", "None").
-As shown below [Example], your answer should not include texts other than a single character ("A", "B", "C", "D", and "None").
+It must be a single character that indicates its answer (i.e., "A", "B", "C", "D", "E").
+As shown below [Example], your answer should not include texts other than a single character ("A", "B", "C", "D", and "E").
 
 [Example]
 Question: How many continents are shown as connected in the image?
@@ -25,6 +25,7 @@ A) Korean Peninsula
 B) One large supercontinent
 C) Two separate continents
 D) Three continents joined together
+E) None of the above
 Answer: B
 
 Question: How many atoms of the molecule in the image?
@@ -33,11 +34,12 @@ A) 1
 B) 2
 C) 3
 D) 4
-Answer: None
+E) None of the above
+Answer: E
 
 DO NOT use your external knowledge obtained by pre-training large-scale data.
 You must base your judgment on the image input's visual evidence.
-If you are not sure or there is no appropriate answer choice, you can output "Answer: None".
+
 You should answer the following question:
 
 [Question]
