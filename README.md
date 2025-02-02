@@ -50,6 +50,7 @@ Despite the huge success of text-to-image (TTI) generation models, existing stud
 
 ### Updates
 
+- [✅] [2025.01.18] 🎁 Our paper has been selected for **oral presentation** [AAAI 2025](https://openreview.net/group?id=AAAI.org/2025/Conference#tab-accept)!
 - [✅] [2024.12.16] 👨‍💻 The official codes have been released!
 - [✅] [2024.12.10] 🎉 Our paper has been accepted to [AAAI 2025](https://openreview.net/group?id=AAAI.org/2025/Conference#tab-accept)!
 - [✅] [2024.09.19] 📄 Our paper is now available! You can find the paper [here](https://arxiv.org/abs/2409.12784).
